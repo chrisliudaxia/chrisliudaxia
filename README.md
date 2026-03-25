@@ -1,101 +1,50 @@
-# Drama Quick Cut
+# Hi there, I'm Chris Liu 👋
 
-Drama Quick Cut is a full-stack AI-assisted video rough-cut workflow for short-drama commentary production.
+我是 **Chris Liu**。
 
-## Current stack
+我主要关注：
+- AI 产品与自动化工作流
+- 创作者工具与内容生产效率
+- 从 0 到 1 的产品设计、验证与迭代
+- 全栈 Web 应用与实际业务场景结合
 
-### Frontend
-- Vite
-- React 18
-- TypeScript
-- Wouter
-- Tailwind CSS
-- TanStack Query
+## What I'm working on
 
-### Backend
-- Express
-- tRPC
-- Drizzle ORM
-- SQLite / MySQL-compatible schema layer
+我最近在持续做这些方向的项目：
+- AI 驱动的视频与内容工作流
+- 自动化效率工具
+- 面向创作者和小团队的产品化系统
+- 可以快速验证想法的小型产品
 
-### Processing and integrations
-- FFmpeg / FFprobe
-- DashScope / Qwen for video analysis and text generation
-- MiniMax for TTS
-- Local filesystem or cloud object storage (GCS / S3 / OSS)
+## Focus areas
 
-## What the app does
+- AI workflow automation
+- Product thinking and rapid iteration
+- Content tooling
+- Creator economy tools
+- Full-stack web apps
 
-The main workflow is:
+## Tech I often work with
 
-1. Upload source video material
-2. Analyze video content with AI
-3. Generate commentary plan and rough-cut tasks
-4. Run modular processing tasks for video, audio, subtitles, and merge
-5. Review generated project outputs in the web app
+- TypeScript / JavaScript
+- React / Vite
+- Node.js / Express
+- API integrations
+- AI application workflows
 
-## Routes
+## Featured project
 
-The client app currently exposes these primary routes:
+### DramaQuickCut
+一个面向短剧解说与粗剪工作流的 AI 视频处理项目。
 
-- `/` landing page
-- `/login` login page
-- `/upload` upload workflow
-- `/projects` project list
-- `/project/:id` project detail
-- `/assets` asset library
+当前独立仓库：
+- [DramaQuickCut](https://github.com/chrisliudaxia/dramaquickcut)
 
-## Current project status
+## Reach out
 
-This repository is a working full-stack application, but it still behaves like an actively evolving production tool rather than a fully finalized SaaS product.
+- GitHub: [@chrisliudaxia](https://github.com/chrisliudaxia)
+- Email: chris.careervantage@gmail.com
 
-Recent cleanup focused on:
-- aligning docs with the actual codebase
-- removing misleading production mocks
-- improving cookie security behavior
-- improving SEO metadata for the landing page
-- reducing synchronous filesystem usage in hot paths
-- unifying provider and cloud credential configuration
+---
 
-See `FIXES_APPLIED.md` for a detailed summary of the applied changes.
-
-## Development
-
-Install dependencies:
-
-```bash
-npm install
-```
-
-Run the app:
-
-```bash
-npm run dev
-```
-
-Build the app:
-
-```bash
-npm run build
-```
-
-## Environment
-
-Copy `.env.template` to `.env` and fill in the required keys.
-
-Important current variables:
-- `JWT_SECRET`
-- `AI_VIDEO_PROVIDER`
-- `TTS_PROVIDER`
-- `DASHSCOPE_API_KEY`
-- `MINIMAX_API_KEY`
-- `MINIMAX_GROUP_ID`
-- `STORAGE_PROVIDER`
-
-## Notes
-
-Some historical docs remain in the repository for reference, but the current source of truth is:
-- `README.md`
-- `FIXES_APPLIED.md`
-- `docs/CURRENT_ARCHITECTURE.md`
-- `docs/guides/CURRENT_DEPLOYMENT_GUIDE.md`
+Thanks for stopping by.
